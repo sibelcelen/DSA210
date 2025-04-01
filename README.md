@@ -25,7 +25,7 @@ Retail therapy is often seen as a way to cope with stress, but does stress actua
 ## Data Sources
 
 ### 1. Personal Data (Primary Data Collection)
-- **Date & Time of Purchase**  
+- **Date of Purchase**  
 - **Purchase Amount**  
 - **Product Category**: `Fashion`, `Beauty`, `Food`, `Entertainment`, `Essentials`  
 - **Impulse vs. Planned**: Binary label (`Impulse`, `Planned`)  
