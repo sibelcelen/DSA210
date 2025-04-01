@@ -4,16 +4,38 @@
 This project explores the relationship between stress levels and spending habits to determine if people tend to spend more money when they are stressed. The study analyzes personal shopping behavior and external stress indicators to uncover any correlations between emotional state and consumer behavior.
 
 ## Motivation
-Retail therapy is often seen as a way to cope with stress, but does stress actually lead to higher spending? This project aims to provide data-driven insights into whether stress levels influence spending patterns, and if so, in which categories (fashion, beauty, food, etc.).
+Retail therapy is often seen as a way to cope with stress, but does stress actually lead to increased spending? This study aims to provide data-driven insights into:
+- Whether stress levels influence overall spending behavior
+- Which product categories (fashion, beauty, food, etc.) are most impacted
+- How external stress indicators (e.g., market volatility) correlate with spending patterns
+
+---
+## ❓ Research Questions & Hypotheses
+
+1. **Does an increase in self-reported stress levels correspond to a significant increase in total daily spending?**
+   - **H₀ (Null Hypothesis):** Stress levels have no significant effect on daily spending.
+   - **H₁ (Alternative Hypothesis):** Higher stress levels are associated with increased daily spending.
+
+2. **Which product categories are most influenced by stress?**
+
+3. **Do external financial stress indicators align with personal spending behavior during stressful periods?**
 
 ---
 
 ## Data Sources
 
 ### 1. Personal Data (Primary Data Collection)
-- **Spending Habits:** Tracking personal purchases (amount spent, category, impulse vs. planned buy).
-- **Stress Levels:** Self-reported daily stress levels (1-10 scale) using a journal or stress-tracking app.
-- **Shopping Motivation:** Logging shopping intent, including whether I wanted to shop and if I added something to my cart but later postponed the purchase.
+- **Date & Time of Purchase**  
+- **Purchase Amount**  
+- **Product Category**: `Fashion`, `Beauty`, `Food`, `Entertainment`, `Essentials`  
+- **Impulse vs. Planned**: Binary label (`Impulse`, `Planned`)  
+- **Shopping Motivation**: `Need-based`, `Stress-based`, `Reward`, `Boredom`, etc.  
+- **Stress Level**: Self-reported on a `1–10` scale  
+- **Sleep Quality**: Self-rated (optional)  
+- **Social Media Use**: Hours per day (optional)  
+- **Weather Conditions**: Enriched via API if possible  
+- **Day of Week & Time of Day**: Captured automatically  
+- **Mood Notes (Optional)**: Brief daily log for qualitative insights  
 
 ### 2. Public Data (For Enrichment)
 To supplement personal data, external datasets will provide broader context:
@@ -31,6 +53,25 @@ To supplement personal data, external datasets will provide broader context:
 
 - **Stock Market Volatility (Stress Indicator)**
   - *VIX Index, financial reports:* Economic uncertainty’s impact on spending behavior.
+
+---
+
+### 🤖 Machine Learning Models & Evaluation Plan
+
+I plan to use the following models to predict daily spending based on stress levels and contextual features:
+
+- **Linear Regression**
+- **Random Forest Regressor**
+
+Model training will include **cross-validation** to avoid overfitting.
+
+#### 📏 Evaluation Metrics
+
+- **R² (Coefficient of Determination)**: Measures how well the model explains the variance in spending  
+- **Mean Absolute Error (MAE)**: Shows the average magnitude of prediction errors  
+- **Root Mean Squared Error (RMSE)**: Penalizes larger errors more heavily, giving insight into prediction accuracy
+
+Additionally, **feature importance** from tree-based models (like Random Forest) will be analyzed to understand which variables most strongly influence stress-related spending behavior.
 
 ---
 
