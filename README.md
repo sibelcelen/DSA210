@@ -100,3 +100,79 @@ Additionally, **feature importance** from tree-based models (like Random Forest)
 
 ---
 
+## Phase 2 Insights
+## 🎯 Hypothesis Testing
+
+The dataset includes variables such as stress level, sleep quality, shopping behavior, impulse/planned purchase type, social media usage, and weather.
+
+---
+
+### 🔹 H1: People are more likely to shop when they are under higher stress.
+
+**Test Used**: Independent t-test  
+**Variables**:  
+- Group 1: Stress Level on shopping days (`Shopping? = YES`)  
+- Group 2: Stress Level on non-shopping days (`Shopping? = NO`)
+
+**Result**:  
+`t = 2.31`, `p = 0.027` ✅
+
+**Interpretation**:  
+Since *p < 0.05*, we reject the null hypothesis. People tend to experience **higher stress on shopping days**, suggesting that shopping is used as a **coping mechanism for stress**.
+
+---
+
+### 🔹 H2: Impulse shopping is more common on high-stress days compared to planned shopping.
+
+**Test Used**: Independent t-test  
+**Variables**:  
+- Group 1: Stress Level on `IMPULSE` shopping days  
+- Group 2: Stress Level on `PLANNED` shopping days
+
+**Result**:  
+`t = 2.75`, `p = 0.011` ✅
+
+**Interpretation**:  
+Since *p < 0.05*, the result is statistically significant. Stress levels are **significantly higher** on impulse shopping days, supporting the idea that **unplanned purchases are emotionally driven**.
+
+---
+
+### 🔹 H3: Weather conditions influence shopping behavior.
+
+**Test Used**: Chi-square test of independence  
+**Variables**:  
+- `Weather` (e.g., Sunny, Rainy, Cloudy)  
+- `Shopping?` (YES/NO)
+
+**Result**:  
+`p = 0.218` ❌
+
+**Interpretation**:  
+Since *p > 0.05*, there is **no statistically significant relationship** between weather and shopping frequency. While cloudy or rainy days might feel like triggers, the data does **not support this assumption** statistically.
+
+---
+
+### 🔹 H4: Social media usage negatively impacts sleep quality.
+
+**Test Used**: Pearson correlation  
+**Variables**:  
+- `Social Media Use (h)`  
+- `Sleep Quality`
+
+**Result**:  
+`r = -0.38`, `p = 0.042` ✅
+
+**Interpretation**:  
+There is a **moderate negative correlation**, meaning **more social media use is linked to lower sleep quality**. This may contribute indirectly to stress and emotional shopping patterns.
+
+---
+
+### ✅ Summary Table
+
+| Hypothesis                               | Test       | p-value | Result           | Interpretation                              |
+|------------------------------------------|------------|---------|------------------|----------------------------------------------|
+| H1: Stress ↑ → Shopping ↑                | t-test     | 0.027   | ✅ Significant    | Shopping is linked to high stress            |
+| H2: Stress ↑ → Impulse > Planned         | t-test     | 0.011   | ✅ Significant    | Impulse purchases are stress-driven          |
+| H3: Weather ↔ Shopping                   | Chi-square | 0.218   | ❌ Not Significant| Weather doesn't significantly affect shopping|
+| H4: Social Media ↑ → Sleep ↓             | Pearson r  | 0.042   | ✅ Significant    | More social = worse sleep quality            |
+
