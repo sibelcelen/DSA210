@@ -100,7 +100,7 @@ Additionally, **feature importance** from tree-based models (like Random Forest)
 
 ---
 
-## Phase 2 Insights
+# Phase 2 Insights
 ## 🎯 Hypothesis Testing
 
 The dataset includes variables such as stress level, sleep quality, shopping behavior, impulse/planned purchase type, social media usage, and weather.
