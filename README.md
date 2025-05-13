@@ -10,7 +10,7 @@ Retail therapy is often seen as a way to cope with stress, but does stress actua
 - How external stress indicators (e.g., market volatility) correlate with spending patterns
 
 ---
-## ❓ Research Questions & Hypotheses
+##  Research Questions & Hypotheses
 
 1. **Does an increase in self-reported stress levels correspond to a significant increase in total daily spending?**
    - **H₀ (Null Hypothesis):** Stress levels have no significant effect on daily spending.
@@ -56,7 +56,7 @@ To supplement personal data, external datasets will provide broader context:
 
 ---
 
-### 🤖 Machine Learning Models & Evaluation Plan
+###  Machine Learning Models & Evaluation Plan
 
 I plan to use the following models to predict daily spending based on stress levels and contextual features:
 
@@ -65,7 +65,7 @@ I plan to use the following models to predict daily spending based on stress lev
 
 Model training will include **cross-validation** to avoid overfitting.
 
-#### 📏 Evaluation Metrics
+####  Evaluation Metrics
 
 - **R² (Coefficient of Determination)**: Measures how well the model explains the variance in spending  
 - **Mean Absolute Error (MAE)**: Shows the average magnitude of prediction errors  
@@ -76,32 +76,32 @@ Additionally, **feature importance** from tree-based models (like Random Forest)
 ---
 
 ## Data Collection Plan
-✔️ Tracking personal data daily to capture spending habits and stress levels.  
-✔️ Categorizing purchases into **fashion, beauty, entertainment, food, and essentials**.  
-✔️ Enriching data with economic trends & external financial stress indicators.  
-✔️ Performing **Exploratory Data Analysis (EDA)** to identify spending trends during high and low stress periods.  
-✔️ Applying **Machine Learning Models** to predict high-stress spending behavior.  
+- Tracking personal data daily to capture spending habits and stress levels.  
+- Categorizing purchases into **fashion, beauty, entertainment, food, and essentials**.  
+- Enriching data with economic trends & external financial stress indicators.  
+- Performing **Exploratory Data Analysis (EDA)** to identify spending trends during high and low stress periods.  
+- Applying **Machine Learning Models** to predict high-stress spending behavior.  
 
 ---
 
 ## Planned Analysis & Techniques
-🔹 **Correlation Analysis:** Checking if higher stress scores correspond with higher spending.  
-🔹 **Time-Series Analysis:** Observing trends in spending patterns across different stress levels.  
-🔹 **Clustering:** Identifying spending categories most affected by stress.  
-🔹 **Hypothesis Testing:** Testing if spending significantly increases on high-stress days.  
-🔹 **Predictive Modeling:** Using regression models to predict spending behavior based on stress levels.  
+- **Correlation Analysis:** Checking if higher stress scores correspond with higher spending.  
+- **Time-Series Analysis:** Observing trends in spending patterns across different stress levels.  
+- **Clustering:** Identifying spending categories most affected by stress.  
+- **Hypothesis Testing:** Testing if spending significantly increases on high-stress days.  
+- **Predictive Modeling:** Using regression models to predict spending behavior based on stress levels.  
 
 ---
 
 ## Expected Outcomes
-✅ Identify whether stress leads to impulse purchases or increased spending.  
-✅ Discover which product categories (**beauty, fashion, food**) are most affected by stress-driven shopping.  
-✅ Determine if external stress factors (**economy, stock market**) influence retail therapy trends.  
+- Identify whether stress leads to impulse purchases or increased spending.  
+- Discover which product categories (**beauty, fashion, food**) are most affected by stress-driven shopping.  
+- Determine if external stress factors (**economy, stock market**) influence retail therapy trends.  
 
 ---
 
 # Phase 2 Insights
-## 🎯 Hypothesis Testing
+##  Hypothesis Testing
 
 The dataset includes variables such as stress level, sleep quality, shopping behavior, impulse/planned purchase type, social media usage, and weather.
 
