@@ -1,7 +1,7 @@
 # Retail Therapy & Stress: Does Stress Encourage Shopping?
 
 ## Project Overview
-This project explores the relationship between stress levels and spending habits to determine if people tend to spend more money when they are stressed. The study analyzes personal shopping behavior and external stress indicators to uncover any correlations between emotional state and consumer behavior.
+This project explores the relationship between stress levels and spending habits to determine if people tend to **spend more money when they are stressed**. The study analyzes *personal shopping behavior* and *external stress indicators* to uncover any correlations between emotional state and consumer behavior.
 
 ## Motivation
 Retail therapy is often seen as a way to cope with stress, but does stress actually lead to increased spending? This study aims to provide data-driven insights into:
@@ -35,7 +35,7 @@ Retail therapy is often seen as a way to cope with stress, but does stress actua
 - **Social Media Use**: Hours per day (optional)  
 - **Weather Conditions**: Enriched via API if possible  
 - **Day of Week & Time of Day**: Captured automatically  
-- **Mood Notes (Optional)**: Brief daily log for qualitative insights  
+- **Notes (Optional)**: Extra note if necessary  
 
 ### 2. Public Data (For Enrichment)
 To supplement personal data, external datasets will provide broader context:
@@ -44,15 +44,6 @@ To supplement personal data, external datasets will provide broader context:
   - Insights from *Retail Therapy: Scale Development* (Kang & Johnson, 2011) on shopping as a mood-alleviating behavior.  
     📄 [Read the study](https://www.researchgate.net/publication/254085102_Retail_Therapy_Scale_Development)
   - Validated survey data distinguishing retail therapy from impulse and compulsive buying.
-
-- **Economic & Consumer Spending Trends**
-  - *CES, FRED, World Bank, Statista:* Consumer spending patterns, inflation, and economic indicators.
-
-- **Psychological Studies on Retail Therapy & Stress**
-  - Research on shopping as a coping mechanism and its psychological drivers.
-
-- **Stock Market Volatility (Stress Indicator)**
-  - *VIX Index, financial reports:* Economic uncertainty’s impact on spending behavior.
 
 ---
 
