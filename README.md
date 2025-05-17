@@ -99,7 +99,6 @@ The dataset includes variables such as stress level, sleep quality, shopping beh
 ---
 
 ### 🔹 H1: People are more likely to shop when they are under higher stress.
-
 **Test Used**: Independent t-test  
 **Variables**:  
 - Group 1: Stress Level on shopping days (`Shopping? = YES`)  
@@ -114,7 +113,6 @@ Since *p < 0.05*, we reject the null hypothesis. People tend to experience **hig
 ---
 
 ### 🔹 H2: Impulse shopping is more common on high-stress days compared to planned shopping.
-
 **Test Used**: Independent t-test  
 **Variables**:  
 - Group 1: Stress Level on `IMPULSE` shopping days  
@@ -129,7 +127,6 @@ Since *p < 0.05*, the result is statistically significant. Stress levels are **s
 ---
 
 ### 🔹 H3: Weather conditions influence shopping behavior.
-
 **Test Used**: Chi-square test of independence  
 **Variables**:  
 - `Weather` (e.g., Sunny, Rainy, Cloudy)  
@@ -144,7 +141,6 @@ Since *p > 0.05*, there is **no statistically significant relationship** between
 ---
 
 ### 🔹 H4: Social media usage negatively impacts sleep quality.
-
 **Test Used**: Pearson correlation  
 **Variables**:  
 - `Social Media Use (h)`  
